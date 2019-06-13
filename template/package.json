@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  "private": true,
   "scripts": {
     "dev": "parcel index.html",
     {{#unit}}
@@ -17,18 +16,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "vue": "^2.5.16"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue": "^2.6.10"{{#router}},
+    "vue-router": "^3.0.6"{{/router}}
   },
   "devDependencies": {
     {{#lint}}
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
     {{#if_eq lintConfig "standard"}}
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-promise": "^3.4.0",
@@ -37,7 +36,7 @@
     "eslint-plugin-node": "^5.2.0",
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
-    "eslint-config-airbnb-base": "^11.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-import-resolver-jest": "^2.1.1",
     "eslint-plugin-import": "^2.7.0",
     {{/if_eq}}
@@ -51,6 +50,6 @@
     "vue-jest": "^2.4.1",
     "vue-template-compiler": "^2.5.16",
     {{/unit}}
-    "parcel-bundler": "^1.7.0"
+    "parcel-bundler": "^1.12.3"
   }
 }
